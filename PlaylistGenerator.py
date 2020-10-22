@@ -14,13 +14,13 @@ import os
 import collections
 
 
-os.environ['SPOTIPY_REDIRECT_URI'] = 'http://localhost:8888/callback'
+os.environ['SPOTIPY_REDIRECT_URI'] = 'your-redirect-uri'
 
 SCOPE = "playlist-modify-public,playlist-modify-private"
 CACHE = ".cache-" + "test"
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=SCOPE,
-                                                client_id='899c7be4628e42ebba1718d33d2fda4f', 
-                                                client_secret='07d5f0b433cb465095df45c729a950ea',
+                                                client_id='your-client-id', 
+                                                client_secret='your-client-secret',
                                                 cache_path=CACHE))
 playlists_csv = "UserPlaylists.csv"
 #read user_ids and emails from user_csv
