@@ -12,9 +12,9 @@ import pandas as pd
 import os
 import random
 
-os.environ['SPOTIPY_CLIENT_ID'] = 'b2ba77753a6b4c4eabfb48b0f91addd1'
-os.environ['SPOTIPY_CLIENT_SECRET'] = 'd9665a2a652a4da1a7b8f14d29febfc2'
-os.environ['SPOTIPY_REDIRECT_URI'] = 'http://localhost:8888/callback'
+os.environ['SPOTIPY_CLIENT_ID'] = 'your-client-id'
+os.environ['SPOTIPY_CLIENT_SECRET'] = 'your-client-secret'
+os.environ['SPOTIPY_REDIRECT_URI'] = 'your-callback-uri'
 
 sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
 
